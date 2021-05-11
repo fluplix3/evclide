@@ -1,0 +1,248 @@
+@font-face {
+    font-family: MullerBold;
+    src: url('../fonts/MullerBold.woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: MullerLight;
+    src: url('../fonts/MullerLight.woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: MullerMedium;
+    src: url('../fonts/MullerMedium.woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: MullerRegular;
+    src: url('../fonts/MullerRegular.woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.body {
+    margin: 0 auto;
+    width: 1170px;
+    background-color: #E5E5E5;
+    padding: 20px;
+}
+
+h2 {
+    font-family: MullerLight;
+    font-size: 40px;
+    margin-left: 45px;
+    padding-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.phone {
+    position: absolute;
+    font-family: MullerMedium;
+    font-size: 20px;
+    line-height: 60px;
+    margin-left: 40px;
+    color: #666666;
+}
+
+.personal-account {
+    position: absolute;
+    right: 19.5%;
+    color: #CC9933;
+    font-family: MullerRegular;
+    font-size: 16px;
+    background-image: url('../img/vector.svg');
+    background-size: 21px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    margin-top: 21px;
+}
+
+.table-list {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.list1 {
+    font-family: MullerRegular;
+    margin: 23px;
+}
+
+.border {
+    border-left: 1px solid;
+    border-color: #E1E1E1;
+    margin-left: 30px;  
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.list-add {
+    font-family: MullerRegular;
+    padding: 13px;
+    margin-left: 35px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #CC9933;
+}
+
+.img-3 {
+    width: 573px;
+    height: 535px;
+    float: right;
+    border-radius: 15px;
+}
+
+.images-section1 {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.small-img {
+    Width: 573px;
+    Height: 258px;
+    border-radius: 15px;
+}
+
+.text-images {
+    font-family: MullerBold;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+
+.details {
+    position: absolute;
+    font-family: MullerLight;
+    margin-left: 20px;
+    margin-top: 100px;
+    padding-right: 18px;
+    color: #FFCC66;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-image: url('../img/Rectangle 2.svg');
+    
+}
+
+.prices {
+    position: absolute;
+    margin-top: 150px;
+    font-size: 20px;
+    margin-left: 40px;
+    font-family: MullerRegular;
+    color: #FFFFFF
+    
+}
+
+.text-images2 {
+    position: absolute;
+    right: 32%;
+    font-family: MullerBold;
+    font-size: 60px;
+    color: white;
+    top: 52%;
+}
+
+.prices2 {
+    position: absolute;
+    right: 40%;
+    top: 72%;
+    font-size: 30px;
+    margin-left: 40px;
+    font-family: MullerRegular;
+    color: #FFFFFF
+    
+}
+
+.details2 {
+    position: absolute;
+    font-family: MullerLight;
+    right: 41.7%;
+    top: 78.5%;
+    padding-right: 18px;
+    color: #FFCC66;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-image: url('../img/Rectangle 2.svg');
+}
+
+.section2 {
+    line-height: 200%;
+    font-family: MullerRegular;
+}
+
+.list2 {
+    list-style: none;
+    padding-inline-start: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    display: inline-block;
+    font-size: 20px;
+    color: #CC9933;
+    padding-right: 20px;
+    margin-top: 20px;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url('../img/Rectangle 2.svg');
+}
+
+.down-text {
+    font-family: MullerRegular;
+    margin-left: 45px;
+    line-height: 200%;
+}
+
+.child {
+    background-color: white;
+    width: 573px;
+    height: 165px;
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.float-section3 {
+    float: right;
+}
+
+.section3-images {
+    border-radius: 15px 15px 0px 0px;
+    width: 573px;
+    height: 165px;
+}
+
+.svgs-section4 {
+    background-image: image('../img/bathtub.svg');
+    background-repeat: no-repeat;
+    background-size: 66px;
+}
+
+.text-section4 {
+    list-style: none;
+    
+}
+
+.table-section4 {
+    display: flex;
+}
