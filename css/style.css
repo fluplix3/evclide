@@ -26,7 +26,7 @@
     font-weight: normal;
 }
 
-.body {
+.container {
     margin: 0 auto;
     width: 1170px;
     background-color: #E5E5E5;
@@ -68,120 +68,53 @@ a {
 }
 
 .table-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
     background-color: white;
     border-radius: 15px;
-    padding: 10px;
-    padding-top: 25px;
-    padding-left: 25px;
+    padding: 5px;
     margin-top: 20px;
 }
 
 .list1 {
     font-family: MullerRegular;
-    margin: 23px;
-}
-
-.border {
-    border-left: 1px solid;
-    border-color: #E1E1E1;
-    margin-left: 30px;  
-    margin-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.list-add {
-    font-family: MullerRegular;
-    padding: 13px;
-    margin-left: 35px;
-    border: 1px solid;
-    border-radius: 10px;
-    color: #CC9933;
-}
-
-.img-3 {
-    width: 573px;
-    height: 535px;
-    float: right;
-    border-radius: 15px;
+    margin-left: 50px;
 }
 
 .images-section1 {
     list-style: none;
-    padding-inline-start: 0;
-}
-
-.small-img {
-    Width: 573px;
-    Height: 258px;
-    border-radius: 15px;
+    display: flex;
 }
 
 .text-images {
     font-family: MullerBold;
     font-size: 40px;
     color: white;
-    position: absolute;
     margin-top: 50px;
     margin-left: 40px;
 }
 
-
 .details {
-    position: absolute;
     font-family: MullerLight;
-    margin-left: 20px;
-    margin-top: 100px;
     padding-right: 18px;
     color: #FFCC66;
     background-size: 11px;
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-image: url('../img/Rectangle 2.svg');
-    
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.details-item {
+    margin-left: 40px;
 }
 
 .prices {
-    position: absolute;
-    margin-top: 150px;
     font-size: 20px;
     margin-left: 40px;
     font-family: MullerRegular;
     color: #FFFFFF
     
-}
-
-.text-images2 {
-    position: absolute;
-    right: 32%;
-    font-family: MullerBold;
-    font-size: 60px;
-    color: white;
-    top: 52%;
-}
-
-.prices2 {
-    position: absolute;
-    right: 40%;
-    top: 72%;
-    font-size: 30px;
-    margin-left: 40px;
-    font-family: MullerRegular;
-    color: #FFFFFF
-    
-}
-
-.details2 {
-    position: absolute;
-    font-family: MullerLight;
-    right: 41.7%;
-    top: 78.5%;
-    padding-right: 18px;
-    color: #FFCC66;
-    background-size: 11px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-image: url('../img/Rectangle 2.svg');
 }
 
 .section2 {
@@ -191,9 +124,18 @@ a {
 
 .list2 {
     list-style: none;
+    margin-right: 15px;
+    background-color: white;
+    width: 570px;
+    height: 165px;
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.services-section3 {
+    display: flex;
+    flex-wrap: wrap;
     padding-inline-start: 0px;
-    padding: 0;
-    margin: 0;
 }
 
 .item {
@@ -214,35 +156,43 @@ a {
     line-height: 200%;
 }
 
-.child {
-    background-color: white;
-    width: 573px;
-    height: 165px;
-    border-radius: 0px 0px 15px 15px;
-    margin-bottom: 20px;
-}
-
-.float-section3 {
-    float: right;
-}
-
-.section3-images {
-    border-radius: 15px 15px 0px 0px;
-    width: 573px;
-    height: 165px;
-}
-
-.svgs-section4 {
-    background-image: image('../img/bathtub.svg');
-    background-repeat: no-repeat;
-    background-size: 66px;
-}
-
-.text-section4 {
+.advantages-section4 {
     list-style: none;
-    
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    padding-inline-start: 0px;
 }
 
-.table-section4 {
-    display: flex;
+.advantages-items {
+    width: 277px;
+    height: 100px;
 }
+
+.placement-section5 {
+    align-items: flex-end;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.placement-items {
+    width: 355px;
+    height: 200px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.placement-hotels {
+    font-family: MullerRegular;
+    font-size: 16px;
+    color: black;
+    line-height: 40px;
+}
+
+.rooms {
+    margin-top: 30px;
+}
+
