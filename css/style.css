@@ -72,8 +72,16 @@ a {
     align-items: center;
     list-style: none;
     background-color: white;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.table-list-all {
+    display: flex;
+    align-items: center;
+    background-color: white;
     border-radius: 15px;
-    padding: 5px;
     margin-top: 20px;
 }
 
@@ -82,12 +90,39 @@ a {
     margin-left: 50px;
 }
 
+.border {
+    border: 1px solid;
+    border-color: #E1E1E1;
+    margin-left: 52px;
+    margin-right: 52px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.btn-header-items {
+    border: 1px solid;
+    border-color: #CC9933;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-right: 32px;
+}
+
+.btn-header-items-link {
+    font-size: 16px;
+    color: #CC9933;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .images-section1 {
     list-style: none;
     display: flex;
 }
 
 .text-images {
+    background-image: url(../img/Rectangle14.jpg);
     font-family: MullerBold;
     font-size: 40px;
     color: white;
