@@ -118,16 +118,38 @@ a {
 
 .images-section1 {
     list-style: none;
-    display: flex;
+}
+
+.section1-image {
+    background-image: url('../img/Rectangle 14.jpg');
+    border-radius: 15px;
+    width: 573px;
+    height: 258px;
+}
+
+.section1-image2 {
+    background-image: url('../img/Rectangle 16.jpg');
+    margin-top: 23px;
+    border-radius: 15px;
+    width: 573px;
+    height: 258px;
+}
+
+.section1-image3 {
+    background-image: url('../img/33 1.jpg');
+    border-radius: 15px;
+    float: right;
+    width: 573px;
+    height: 540px;
 }
 
 .text-images {
-    background-image: url(../img/Rectangle14.jpg);
     font-family: MullerBold;
     font-size: 40px;
     color: white;
-    margin-top: 50px;
     margin-left: 40px;
+    width: 300px;
+    padding-top: 40px;
 }
 
 .details {
@@ -138,6 +160,7 @@ a {
     background-image: url('../img/Rectangle 2.svg');
     background-repeat: no-repeat;
     background-position: right;
+    line-height: 100px;
 }
 
 .details-item {
@@ -147,30 +170,85 @@ a {
 .prices {
     font-size: 20px;
     margin-left: 40px;
-    font-family: MullerRegular;
+    line-height: 50px;
+    font-family: MullerLight;
     color: #FFFFFF
     
 }
 
+.text-images1 {
+    font-family: MullerBold;
+    font-size: 60px;
+    color: white;
+    margin-left: 40px;
+    margin-top: 210px;
+    width: 300px;
+}
+
+.prices1 {
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-family: MullerLight;
+    color: #FFFFFF
+}
+
 .section2 {
     line-height: 200%;
+    width: 880px;
     font-family: MullerRegular;
 }
 
 .list2 {
     list-style: none;
-    margin-right: 15px;
     background-color: white;
     width: 570px;
-    height: 165px;
-    border-radius: 0px 0px 15px 15px;
+    height: 330px;
+    border-radius: 15px 15px 15px 15px;
     margin-bottom: 20px;
 }
 
 .services-section3 {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-inline-start: 0px;
+}
+
+.services-images {
+    background-image: url('../img/10.jpg');
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0px 0px;
+    Width:570px;
+    Height:165px;
+}
+
+.services-images2 {
+    background-image: url('../img/15.jpg');
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0px 0px;
+    Width:570px;
+    Height:165px;
+}
+
+.services-images3 {
+    background-image: url('../img/12.jpg');
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0px 0px;
+    Width:570px;
+    Height:165px;
+}
+
+.services-images4 {
+    background-image: url('../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg');
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0px 0px;
+    Width:570px;
+    Height:165px;
+}
+
+.idt {
+    width: 400px;
 }
 
 .item {
@@ -195,13 +273,96 @@ a {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 40px;
+    justify-content: space-between;
     padding-inline-start: 0px;
 }
 
 .advantages-items {
-    width: 277px;
-    height: 100px;
+    font-family: MullerRegular;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 275px;
+    height: 275px;
+    line-height: 200%;
+}
+
+.advantages-image1 {
+    background-image: url('../img/bathtub.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 64px;
+    height: 66px;
+}
+
+.advantages-image2 {
+    background-image: url('../img/hanger.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-image3 {
+    background-image: url('../img/heating.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 64px;
+    height: 66px;
+}
+
+.advantages-image4 {
+    background-image: url('../img/hotel-key.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 66px;
+    height: 66px;
+}
+
+.advantages-image5 {
+    background-image: url('../img/parking.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 66px;
+    height: 66px;
+}
+
+.advantages-image6 {
+    background-image: url('../img/reception.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 64px;
+    height: 66px;
+}
+
+.advantages-image7 {
+    background-image: url('../img/security-box.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 67px;
+    height: 66px;
+}
+
+.advantages-image8 {
+    background-image: url('../img/swimming-pool.svg');
+    background-repeat: no-repeat;
+    margin-left: 44px;
+    margin-top: 42px;
+    width: 64px;
+    height: 66px;
+}
+
+.advantages-text {
+    margin-left: 44px;
+    margin-top: 10px;
+    width: 190px;
 }
 
 .placement-section5 {
@@ -209,15 +370,20 @@ a {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+}
+
+.section5-images {
+    border-radius: 15px 15px 0px 0px;
 }
 
 .placement-items {
-    width: 355px;
-    height: 200px;
-    border-radius: 0px 0px 15px 15px;
+    width: 374px;
+    height: 440px;
+    border-radius: 15px;
     background-color: white;
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .placement-hotels {
@@ -225,9 +391,68 @@ a {
     font-size: 16px;
     color: black;
     line-height: 40px;
+    margin-left: 45px;
+}
+
+.placement-open-text {
+    color: #999999;
+    font-family: Muller;
+    font-size: 18px;
+    margin-left: 45px;
+}
+
+.placement-prices {
+    font-family: MullerBold;
+    font-size: 20px;
+}
+
+.placement-cards {
+    margin-top: 38px;
+}
+
+.placement-stars {
+    margin-left: 75px;
 }
 
 .rooms {
+    font-size: 16px;
+    border: 1px solid;
+    border-color: #CC9933;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 11px;
+    padding-bottom: 11px;
     margin-top: 30px;
+    margin-left: 45px;
+}
+
+.rooms-background {
+    color: #CC9933;
+    padding: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.placement-last-image {
+    position: absolute;
+    background-image: url('../img/41.jpg');
+    border-radius: 15px;
+    width: 373px;
+    height: 440px;
+}
+
+.placement-last-text {
+    position: absolute;
+    font-family: MullerRegular;
+    color: white;
+    font-size: 20px;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-image: url('../img/last.svg');
+    background-position-x: right;
+    background-position-y: center;
+    padding-right: 18px;
+    margin-left: 55px;
+    margin-top: 390px;
 }
 
