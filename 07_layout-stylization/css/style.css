@@ -33,6 +33,12 @@
     padding: 20px;
 }
 
+.up-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h2 {
     font-family: MullerLight;
     font-size: 40px;
@@ -46,17 +52,14 @@ a {
 }
 
 .phone {
-    position: absolute;
+    margin-right: 500px;
     font-family: MullerMedium;
     font-size: 20px;
     line-height: 60px;
-    margin-left: 40px;
     color: #666666;
 }
 
 .personal-account {
-    position: absolute;
-    right: 19.5%;
     color: #CC9933;
     font-family: MullerRegular;
     font-size: 16px;
@@ -64,7 +67,6 @@ a {
     background-size: 21px;
     background-repeat: no-repeat;
     padding-left: 25px;
-    margin-top: 21px;
 }
 
 .table-list {
@@ -120,6 +122,11 @@ a {
     list-style: none;
 }
 
+.section1-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section1-image {
     background-image: url('../img/Rectangle 14.jpg');
     border-radius: 15px;
@@ -138,7 +145,6 @@ a {
 .section1-image3 {
     background-image: url('../img/33 1.jpg');
     border-radius: 15px;
-    float: right;
     width: 573px;
     height: 540px;
 }
@@ -173,7 +179,7 @@ a {
     line-height: 50px;
     font-family: MullerLight;
     color: #FFFFFF
-    
+
 }
 
 .text-images1 {
@@ -203,8 +209,8 @@ a {
     list-style: none;
     background-color: white;
     width: 570px;
-    height: 330px;
-    border-radius: 15px 15px 15px 15px;
+    min-height: 330px;
+    border-radius: 15px;
     margin-bottom: 20px;
 }
 
@@ -217,38 +223,25 @@ a {
 
 .services-images {
     background-image: url('../img/10.jpg');
-    background-repeat: no-repeat;
-    border-radius: 15px 15px 0px 0px;
-    Width:570px;
-    Height:165px;
 }
 
 .services-images2 {
     background-image: url('../img/15.jpg');
-    background-repeat: no-repeat;
-    border-radius: 15px 15px 0px 0px;
-    Width:570px;
-    Height:165px;
 }
 
 .services-images3 {
     background-image: url('../img/12.jpg');
-    background-repeat: no-repeat;
-    border-radius: 15px 15px 0px 0px;
-    Width:570px;
-    Height:165px;
 }
 
 .services-images4 {
     background-image: url('../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg');
-    background-repeat: no-repeat;
-    border-radius: 15px 15px 0px 0px;
-    Width:570px;
-    Height:165px;
 }
 
-.idt {
-    width: 400px;
+.services-all {
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0px 0px;
+  Width:570px;
+  min-Height:165px;
 }
 
 .item {
@@ -283,80 +276,55 @@ a {
     border-radius: 15px;
     margin-top: 20px;
     width: 275px;
-    height: 275px;
+    min-height: 275px;
     line-height: 200%;
+}
+
+.advantages-all-images {
+  background-repeat: no-repeat;
+  margin-left: 44px;
+  margin-top: 42px;
+  min-height: 66px;
 }
 
 .advantages-image1 {
     background-image: url('../img/bathtub.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 64px;
-    height: 66px;
 }
 
 .advantages-image2 {
     background-image: url('../img/hanger.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 67px;
-    height: 66px;
 }
 
 .advantages-image3 {
     background-image: url('../img/heating.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 64px;
-    height: 66px;
 }
 
 .advantages-image4 {
     background-image: url('../img/hotel-key.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 66px;
-    height: 66px;
 }
 
 .advantages-image5 {
     background-image: url('../img/parking.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 66px;
-    height: 66px;
 }
 
 .advantages-image6 {
     background-image: url('../img/reception.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 64px;
-    height: 66px;
 }
 
 .advantages-image7 {
     background-image: url('../img/security-box.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 67px;
-    height: 66px;
 }
 
 .advantages-image8 {
     background-image: url('../img/swimming-pool.svg');
-    background-repeat: no-repeat;
-    margin-left: 44px;
-    margin-top: 42px;
     width: 64px;
-    height: 66px;
 }
 
 .advantages-text {
@@ -380,7 +348,7 @@ a {
 
 .placement-items {
     width: 374px;
-    height: 440px;
+    min-height: 440px;
     border-radius: 15px;
     background-color: white;
     margin-top: 20px;
@@ -438,7 +406,7 @@ a {
     background-image: url('../img/41.jpg');
     border-radius: 15px;
     width: 373px;
-    height: 440px;
+    min-height: 440px;
 }
 
 .placement-last-text {
