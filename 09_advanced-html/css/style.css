@@ -433,15 +433,10 @@ a {
 
 .form-tour {
     display: flex;
-    margin-left: 15px;
+    justify-content: space-around;
 }
 
-.form-all-item {
-    margin-top: 30px;
-    margin-left: 15px;
-  }
-
-  .form-all-item:not(:first-child) {
+.form-all-item:not(:first-child) {
     border-left: 1px solid #E1E1E1;
     padding-left: 20px;
 }
@@ -455,14 +450,21 @@ a {
 
 .form-item-city {
     width: 169px;
+    margin-right: 20px;
 }
 
 .form-item-country {
-    width: 175px;
+    width: 160px;
+    margin-right: 20px;
 }
 
 .form-item-data {
-    width: 132px;
+    width: 135px;
+    margin-right: 20px;
+}
+
+.form-item-number {
+    width: 113px;
 }
 
 .form-right-border {
@@ -472,6 +474,10 @@ a {
 
 .form-numbers {
     border-bottom: 1px solid #E1E1E1;
+}
+
+.form-right-item {
+    padding-right: 20px;
 }
 
 .form-item-text {
@@ -489,10 +495,9 @@ a {
     background-color: white;
     font-size: 16px;
     font-family: MullerRegular;
-    margin-left: 18px;
-    margin-top: 35px;
     color: #CC9933;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .section-tour-search {
@@ -501,6 +506,9 @@ a {
     background-color: white;
     border-radius: 15px;
     margin-left: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .section-contacts {
@@ -509,20 +517,18 @@ a {
     background: #FFFFFF;
     border-radius: 15px;
     display: flex;
-    justify-content: space-around;
-}
-
-.img-section-contacts {
-  width: 653px;
-  height: 528px;
-  margin-top: 43px;
+    background-image: url('../img/Layer 2 1 (1).png');
+    background-size: 653px 528px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
 }
 
 .contacts-info {
+    margin-left: 45px;
+    margin-top: 42px;
     width: 375px;
     min-height: 528px;
-    margin-left: 15px;
-    padding-top: 42px;
 }
 
 .contacts-left-text {
@@ -543,6 +549,7 @@ a {
     font-size: 16px;
     font-family: MullerRegular;
     line-height: 150%;
+    font-style: normal;
 }
 
 .telephone-contacts {
@@ -576,17 +583,17 @@ a {
 }
 
 .btn-contacts {
-  border-radius: 10px;
-  width: 213px;
-  height: 70px;
-  border: 1px solid;
-  border-color: #CC9933;
-  background-color: white;
-  margin-top: 23px;
-  font-size: 16px;
-  font-family: MullerRegular;
-  color: #CC9933;
-  cursor: pointer;
+    border-radius: 10px;
+    width: 213px;
+    height: 70px;
+    border: 1px solid;
+    border-color: #CC9933;
+    background-color: white;
+    margin-top: 23px;
+    font-size: 16px;
+    font-family: MullerRegular;
+    color: #CC9933;
+    cursor: pointer;
 }
 
 .footer {
@@ -597,6 +604,10 @@ a {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    background-image: url('../img/Слой 1.svg');
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 100%;
 }
 
 .left-text-footer {
@@ -649,13 +660,4 @@ a {
     margin-top: 20px;
 }
 
-.big-img-footer {
-    background-image: url('../img/Слой 1.svg');
-    background-repeat: no-repeat;
-    Width: 255px;
-    Height: 255px;
-    position: absolute;
-    margin-top: 14px;
-    margin-left: 200px;
-}
 
