@@ -59,6 +59,10 @@ a {
     color: #666666;
 }
 
+.phone:hover {
+    text-shadow: #666666 1px 1px 2px;
+  }
+
 .personal-account {
     color: #CC9933;
     font-family: MullerRegular;
@@ -67,6 +71,10 @@ a {
     background-size: 21px;
     background-repeat: no-repeat;
     padding-left: 25px;
+}
+
+.personal-account:hover {
+    text-shadow: #CC9933 1px 1px 2px;
 }
 
 .table-list {
@@ -92,30 +100,54 @@ a {
     margin-left: 50px;
 }
 
+.list1:hover {
+    text-shadow: #666666 1px 1px 2px;
+}
+
 .border {
     border: 1px solid;
     border-color: #E1E1E1;
-    margin-left: 52px;
-    margin-right: 52px;
+    margin-left: 50px;
+    margin-right: 45px;
     padding-bottom: 25px;
     padding-top: 25px;
 }
 
 .btn-header-items {
+    border-radius: 10px;
     border: 1px solid;
     border-color: #CC9933;
-    border-radius: 10px;
     background-color: white;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    margin-right: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 42px;
+}
+
+.btn-header-items:hover {
+    transition: 0.4s;
+    background-color: rgba(240, 191, 95, 1);
+}
+
+.first-btn-header-items {
+    width: 107px;
+}
+
+.second-btn-header-items {
+    width: 177px;
+}
+
+.btn-header-items:last-child {
+    margin-left: 35px;
 }
 
 .btn-header-items-link {
-    font-size: 16px;
     color: #CC9933;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 13px 13px;
+    border-radius: 10px;
+}
+
+.btn-header-items-link:hover {
+    color: white;
 }
 
 .images-section1 {
@@ -123,8 +155,8 @@ a {
 }
 
 .section1-flex {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section1-image {
@@ -168,6 +200,11 @@ a {
     background-position: right;
     line-height: 100px;
 }
+
+.details:hover {
+    text-shadow: #CC9933 2px 2px 3px;
+    padding-right: 22px;
+  }
 
 .details-item {
     margin-left: 40px;
@@ -256,6 +293,11 @@ a {
     background-image: url('../img/Rectangle 2.svg');
 }
 
+.item:hover {
+    text-shadow: #CC9933 1px 1px 2px;
+    padding-right: 25px;
+  }
+
 .down-text {
     font-family: MullerRegular;
     margin-left: 45px;
@@ -266,8 +308,11 @@ a {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-inline-start: 0px;
+}
+
+.advantages-items:not(:nth-child(4n)) {
+    margin-right: 20px;
 }
 
 .advantages-items {
@@ -392,13 +437,23 @@ a {
     padding-bottom: 11px;
     margin-top: 30px;
     margin-left: 45px;
+    cursor: pointer;
+}
+
+.rooms:hover {
+    transition: 0.4s;
+    background-color: rgba(240, 191, 95, 1);
 }
 
 .rooms-background {
     color: #CC9933;
     padding: 13px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+}
+
+.rooms-background:hover {
+    color: white;
 }
 
 .placement-last-image {
@@ -406,22 +461,29 @@ a {
     background-image: url('../img/41.jpg');
     border-radius: 15px;
     width: 373px;
-    min-height: 440px;
+    height: 440px;
 }
 
 .placement-last-text {
-    position: absolute;
     font-family: MullerRegular;
+    position: absolute;
     color: white;
     font-size: 20px;
     background-size: 11px;
     background-repeat: no-repeat;
     background-image: url('../img/last.svg');
-    background-position-x: right;
-    background-position-y: center;
+    background-position: right center;
     padding-right: 18px;
-    margin-left: 55px;
-    margin-top: 390px;
+    align-items: center;
+}
+
+.placement-last-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 373px;
+    height: 440px;
 }
 
 .section-tour {
@@ -500,6 +562,12 @@ a {
     margin-left: 20px;
 }
 
+.btn-tour:hover {
+    color: white;
+    transition: 0.4s;
+    background-color: rgba(240, 191, 95, 1);
+}
+
 .section-tour-search {
     width: 1080px;
     height: 106px;
@@ -563,6 +631,10 @@ a {
     font-family: MullerRegular;
 }
 
+.telephone-color:hover {
+    text-shadow: #CC9933 1px 1px 2px;
+  }
+
 .contacts-left-telephones {
     display: flex;
     border-bottom: 1px solid #C4C4C4;
@@ -594,6 +666,12 @@ a {
     font-family: MullerRegular;
     color: #CC9933;
     cursor: pointer;
+}
+
+.btn-contacts:hover {
+    color: white;
+    background-color: rgba(240, 191, 95, 1);
+    transition: 0.4s;
 }
 
 .footer {
@@ -628,6 +706,10 @@ a {
     line-height: 100px;
 }
 
+.down-left-text-footer:hover {
+    text-shadow: #CC9933 1px 1px 2px;
+}
+
 .upper-medium-text-footer {
     font-family: MullerLight;
     color: white;
@@ -649,6 +731,10 @@ a {
     color: #CC9933;
     line-height: 150%;
 }
+
+.medium-text-footer:hover {
+    text-shadow: #CC9933 1px 1px 2px;
+  }
 
 .right-imgs-footer {
     margin-right: 50px;
