@@ -1,29 +1,35 @@
 @font-face {
-    font-family: MullerBold;
+    font-family: 'Muller';
     src: url('../fonts/MullerBold.woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: MullerLight;
+    font-family: 'Muller';
     src: url('../fonts/MullerLight.woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: MullerMedium;
+    font-family: 'Muller';
     src: url('../fonts/MullerMedium.woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: MullerRegular;
+    font-family: 'Muller';
     src: url('../fonts/MullerRegular.woff');
     font-style: normal;
     font-weight: normal;
+}
+
+
+
+* {
+    font-family: Muller;
 }
 
 .container {
@@ -40,10 +46,10 @@
 }
 
 h2 {
-    font-family: MullerLight;
     font-size: 40px;
     margin-left: 45px;
     padding-top: 40px;
+    font-weight: 500;
 }
 
 a {
@@ -53,10 +59,10 @@ a {
 
 .phone {
     margin-right: 500px;
-    font-family: MullerMedium;
     font-size: 20px;
     line-height: 60px;
     color: #666666;
+    font-weight: 600;
 }
 
 .phone:hover {
@@ -65,7 +71,6 @@ a {
 
 .personal-account {
     color: #CC9933;
-    font-family: MullerRegular;
     font-size: 16px;
     background-image: url('../img/vector.svg');
     background-size: 21px;
@@ -96,7 +101,6 @@ a {
 }
 
 .list1 {
-    font-family: MullerRegular;
     margin-left: 50px;
 }
 
@@ -182,16 +186,15 @@ a {
 }
 
 .text-images {
-    font-family: MullerBold;
     font-size: 40px;
     color: white;
     margin-left: 40px;
     width: 300px;
     padding-top: 40px;
+    font-weight: 700;
 }
 
 .details {
-    font-family: MullerLight;
     padding-right: 18px;
     color: #FFCC66;
     background-size: 11px;
@@ -214,32 +217,29 @@ a {
     font-size: 20px;
     margin-left: 40px;
     line-height: 50px;
-    font-family: MullerLight;
     color: #FFFFFF
 
 }
 
 .text-images1 {
-    font-family: MullerBold;
     font-size: 60px;
     color: white;
     margin-left: 40px;
     margin-top: 210px;
     width: 300px;
+    font-weight: 700;
 }
 
 .prices1 {
     font-size: 30px;
     margin-left: 40px;
     margin-top: 25px;
-    font-family: MullerLight;
     color: #FFFFFF
 }
 
 .section2 {
     line-height: 200%;
     width: 880px;
-    font-family: MullerRegular;
 }
 
 .list2 {
@@ -299,7 +299,6 @@ a {
   }
 
 .down-text {
-    font-family: MullerRegular;
     margin-left: 45px;
     line-height: 200%;
 }
@@ -316,7 +315,6 @@ a {
 }
 
 .advantages-items {
-    font-family: MullerRegular;
     background-color: white;
     border-radius: 15px;
     margin-top: 20px;
@@ -393,14 +391,13 @@ a {
 
 .placement-items {
     width: 374px;
-    min-height: 440px;
+    height: 440px;
     border-radius: 15px;
     background-color: white;
     margin-top: 20px;
 }
 
 .placement-hotels {
-    font-family: MullerRegular;
     font-size: 16px;
     color: black;
     line-height: 40px;
@@ -409,14 +406,13 @@ a {
 
 .placement-open-text {
     color: #999999;
-    font-family: Muller;
     font-size: 18px;
     margin-left: 45px;
 }
 
 .placement-prices {
-    font-family: MullerBold;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .placement-cards {
@@ -457,16 +453,20 @@ a {
 }
 
 .placement-last-image {
-    position: absolute;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
     background-image: url('../img/41.jpg');
     border-radius: 15px;
+    background-size: cover;
     width: 373px;
     height: 440px;
 }
 
 .placement-last-text {
-    font-family: MullerRegular;
-    position: absolute;
+    position: relative;
     color: white;
     font-size: 20px;
     background-size: 11px;
@@ -474,16 +474,15 @@ a {
     background-image: url('../img/last.svg');
     background-position: right center;
     padding-right: 18px;
-    align-items: center;
 }
 
-.placement-last-text::before {
+.placement-last-text, .placement-last-image::before {
     content: '';
     position: absolute;
-    top: 0;
     left: 0;
-    width: 373px;
-    height: 440px;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .section-tour {
@@ -506,7 +505,6 @@ a {
 .form-items {
     border: 0px;
     min-height: 36px;
-    font-family: MullerRegular;
     font-size: 16px;
 }
 
@@ -545,7 +543,6 @@ a {
 .form-item-text {
     font-size: 12px;
     margin-left: 3px;
-    font-family: MullerRegular;
 }
 
 .btn-tour {
@@ -556,7 +553,6 @@ a {
     border-color: #CC9933;
     background-color: white;
     font-size: 16px;
-    font-family: MullerRegular;
     color: #CC9933;
     cursor: pointer;
     margin-left: 20px;
@@ -601,7 +597,7 @@ a {
 
 .contacts-left-text {
   font-size: 20px;
-  font-family: MullerBold;
+  font-weight: 900;
 }
 
 .contacts-left {
@@ -615,7 +611,6 @@ a {
 .contacts-right-text {
     width: 229px;
     font-size: 16px;
-    font-family: MullerRegular;
     line-height: 150%;
     font-style: normal;
 }
@@ -628,7 +623,6 @@ a {
 
 .telephone-color {
     color: #CC9933;
-    font-family: MullerRegular;
 }
 
 .telephone-color:hover {
@@ -651,7 +645,6 @@ a {
 
 .contacts-mail-right {
     color: #999999;
-    font-family: MullerRegular;
 }
 
 .btn-contacts {
@@ -663,7 +656,6 @@ a {
     background-color: white;
     margin-top: 23px;
     font-size: 16px;
-    font-family: MullerRegular;
     color: #CC9933;
     cursor: pointer;
 }
@@ -690,7 +682,6 @@ a {
 
 .left-text-footer {
     margin-left: 50px;
-    font-family: MullerLight;
     font-size: 16px;
     width: 320px;
 }
@@ -711,7 +702,6 @@ a {
 }
 
 .upper-medium-text-footer {
-    font-family: MullerLight;
     color: white;
     width: 358px;
     margin-top: 52px;
@@ -727,7 +717,6 @@ a {
 
 .medium-text-footer {
     font-size: 16px;
-    font-family: MullerRegular;
     color: #CC9933;
     line-height: 150%;
 }
