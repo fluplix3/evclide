@@ -32,6 +32,12 @@
     font-family: Muller;
 }
 
+:root {
+    --lagoona-style-color: #CC9933;
+    --white-color: white;
+    --shadow-color: #666666;
+}
+
 .container {
     margin: 0 auto;
     width: 1170px;
@@ -54,23 +60,23 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #666666;
+    color: var(--shadow-color);
 }
 
 .phone {
     margin-right: 500px;
     font-size: 20px;
     line-height: 60px;
-    color: #666666;
+    color: var(--shadow-color);
     font-weight: 600;
 }
 
 .phone:hover {
-    text-shadow: #666666 1px 1px 2px;
+    text-shadow: var(--shadow-color) 1px 1px 2px;
   }
 
 .personal-account {
-    color: #CC9933;
+    color: var(--lagoona-style-color);
     font-size: 16px;
     background-image: url('../img/vector.svg');
     background-size: 21px;
@@ -79,14 +85,14 @@ a {
 }
 
 .personal-account:hover {
-    text-shadow: #CC9933 1px 1px 2px;
+    text-shadow: var(--lagoona-style-color) 1px 1px 2px;
 }
 
 .table-list {
     display: flex;
     align-items: center;
     list-style: none;
-    background-color: white;
+    background-color: var(--white-color);
     padding-left: 5px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -95,7 +101,7 @@ a {
 .table-list-all {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 15px;
     margin-top: 20px;
 }
@@ -105,7 +111,7 @@ a {
 }
 
 .list1:hover {
-    text-shadow: #666666 1px 1px 2px;
+    text-shadow: var(--shadow-color) 1px 1px 2px;
 }
 
 .border {
@@ -120,8 +126,8 @@ a {
 .btn-header-items {
     border-radius: 10px;
     border: 1px solid;
-    border-color: #CC9933;
-    background-color: white;
+    border-color: var(--lagoona-style-color);
+    background-color: var(--white-color);
     font-size: 16px;
     cursor: pointer;
     height: 42px;
@@ -145,13 +151,13 @@ a {
 }
 
 .btn-header-items-link {
-    color: #CC9933;
+    color: var(--lagoona-style-color);
     padding: 13px 13px;
     border-radius: 10px;
 }
 
 .btn-header-items-link:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 .images-section1 {
@@ -187,7 +193,7 @@ a {
 
 .text-images {
     font-size: 40px;
-    color: white;
+    color: var(--white-color);
     margin-left: 40px;
     width: 300px;
     padding-top: 40px;
@@ -205,7 +211,7 @@ a {
 }
 
 .details:hover {
-    text-shadow: #CC9933 2px 2px 3px;
+    text-shadow: var(--lagoona-style-color) 2px 2px 3px;
     padding-right: 22px;
   }
 
@@ -217,13 +223,13 @@ a {
     font-size: 20px;
     margin-left: 40px;
     line-height: 50px;
-    color: #FFFFFF
+    color: var(--white-color);
 
 }
 
 .text-images1 {
     font-size: 60px;
-    color: white;
+    color: var(--white-color);
     margin-left: 40px;
     margin-top: 210px;
     width: 300px;
@@ -234,7 +240,7 @@ a {
     font-size: 30px;
     margin-left: 40px;
     margin-top: 25px;
-    color: #FFFFFF
+    color: var(--white-color);
 }
 
 .section2 {
@@ -244,7 +250,7 @@ a {
 
 .list2 {
     list-style: none;
-    background-color: white;
+    background-color: var(--white-color);
     width: 570px;
     min-height: 330px;
     border-radius: 15px;
@@ -284,7 +290,7 @@ a {
 .item {
     display: inline-block;
     font-size: 20px;
-    color: #CC9933;
+    color: var(--lagoona-style-color);
     padding-right: 20px;
     margin-top: 20px;
     background-size: 11px;
@@ -294,7 +300,7 @@ a {
 }
 
 .item:hover {
-    text-shadow: #CC9933 1px 1px 2px;
+    text-shadow: var(--lagoona-style-color) 1px 1px 2px;
     padding-right: 25px;
   }
 
@@ -315,7 +321,7 @@ a {
 }
 
 .advantages-items {
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 15px;
     margin-top: 20px;
     width: 275px;
@@ -393,7 +399,7 @@ a {
     width: 374px;
     height: 440px;
     border-radius: 15px;
-    background-color: white;
+    background-color: var(--white-color);
     margin-top: 20px;
 }
 
@@ -405,7 +411,7 @@ a {
 }
 
 .placement-open-text {
-    color: #999999;
+    color: var(--shadow-color);
     font-size: 18px;
     margin-left: 45px;
 }
@@ -426,9 +432,9 @@ a {
 .rooms {
     font-size: 16px;
     border: 1px solid;
-    border-color: #CC9933;
+    border-color: var(--lagoona-style-color);
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--white-color);
     padding-top: 11px;
     padding-bottom: 11px;
     margin-top: 30px;
@@ -442,19 +448,19 @@ a {
 }
 
 .rooms-background {
-    color: #CC9933;
+    color: var(--lagoona-style-color);
     padding: 13px;
     padding-top: 11px;
     padding-bottom: 12px;
 }
 
 .rooms-background:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 .placement-last-image {
-    display: flex;
     position: relative;
+    display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
@@ -466,19 +472,19 @@ a {
 }
 
 .placement-last-text {
-    position: relative;
-    color: white;
+    color: var(--white-color);
     font-size: 20px;
     background-size: 11px;
     background-repeat: no-repeat;
     background-image: url('../img/last.svg');
     background-position: right center;
+    margin-bottom: 40px;
     padding-right: 18px;
 }
 
-.placement-last-text, .placement-last-image::before {
-    content: '';
+.placement-last-text::before {
     position: absolute;
+    content: '';
     left: 0;
     right: 0;
     top: 0;
@@ -550,8 +556,8 @@ a {
     width: 108px;
     height: 42px;
     border: 1px solid;
-    border-color: #CC9933;
-    background-color: white;
+    border-color: var(--lagoona-style-color);
+    background-color: var(--white-color);
     font-size: 16px;
     color: #CC9933;
     cursor: pointer;
@@ -567,7 +573,7 @@ a {
 .section-tour-search {
     width: 1080px;
     height: 106px;
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 15px;
     margin-left: 42px;
     display: flex;
@@ -578,7 +584,7 @@ a {
 .section-contacts {
     width: 1168px;
     height: 618px;
-    background: #FFFFFF;
+    background: var(--white-color);
     border-radius: 15px;
     display: flex;
     background-image: url('../img/Layer 2 1 (1).png');
@@ -622,11 +628,11 @@ a {
 }
 
 .telephone-color {
-    color: #CC9933;
+    color: var(--lagoona-style-color);
 }
 
 .telephone-color:hover {
-    text-shadow: #CC9933 1px 1px 2px;
+    text-shadow: var(--lagoona-style-color) 1px 1px 2px;
   }
 
 .contacts-left-telephones {
@@ -644,7 +650,7 @@ a {
 }
 
 .contacts-mail-right {
-    color: #999999;
+    color: var(--shadow-color);
 }
 
 .btn-contacts {
@@ -652,16 +658,16 @@ a {
     width: 213px;
     height: 70px;
     border: 1px solid;
-    border-color: #CC9933;
+    border-color: var(--lagoona-style-color);
     background-color: white;
     margin-top: 23px;
     font-size: 16px;
-    color: #CC9933;
+    color: var(--lagoona-style-color);
     cursor: pointer;
 }
 
 .btn-contacts:hover {
-    color: white;
+    color: var(--white-color);
     background-color: rgba(240, 191, 95, 1);
     transition: 0.4s;
 }
@@ -687,22 +693,22 @@ a {
 }
 
 .upper-left-text-footer {
-    color: white;
+    color: var(--white-color);
     line-height: 30px;
     padding-top: 47px;
 }
 
 .down-left-text-footer {
-    color: #CC9933;
+    color: var(--lagoona-style-color);
     line-height: 100px;
 }
 
 .down-left-text-footer:hover {
-    text-shadow: #CC9933 1px 1px 2px;
+    text-shadow: var(--lagoona-style-color) 1px 1px 2px;
 }
 
 .upper-medium-text-footer {
-    color: white;
+    color: var(--white-color);
     width: 358px;
     margin-top: 52px;
 }
@@ -717,12 +723,12 @@ a {
 
 .medium-text-footer {
     font-size: 16px;
-    color: #CC9933;
+    color: var(--lagoona-style-color);
     line-height: 150%;
 }
 
 .medium-text-footer:hover {
-    text-shadow: #CC9933 1px 1px 2px;
+    text-shadow: var(--lagoona-style-color) 1px 1px 2px;
   }
 
 .right-imgs-footer {
