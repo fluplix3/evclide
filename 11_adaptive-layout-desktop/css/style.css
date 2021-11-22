@@ -1,0 +1,262 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.eot');
+	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+		url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.eot');
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+		url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Medium.eot');
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+		url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-ExtraBold.eot');
+	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+		url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+* {
+	list-style: none;
+	font-family: 'Montserrat';
+	text-decoration: none;
+}
+
+.container_main {
+    width: 1770px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 75px;
+	padding-left: 75px;
+	margin-top: 14px;
+	box-shadow: 4px 10px 10px 0px rgba(147, 167, 182, 0.2);
+}
+
+.header__nav {
+	display: flex;
+	font-size: 18px;
+	font-weight: 600;
+	align-items: center;
+}
+.header__list:not(:last-child) {
+	margin-right: 85px;
+}
+
+.header__link {
+	color: #333333;
+}
+
+.hero {
+	height: 620px;
+	background-image: url('../img/low-angle-photo-of-balconies-2462015\ 1.jpg');
+}
+
+.hero__main-text {
+	font-weight: 800;
+	color: white;
+	margin: 0;
+	font-size: 70px;
+	line-height: 85px;
+	width: 837px;
+	margin-left: 80px;
+	padding-top: 100px;
+}
+
+.hero__text {
+	color: white;
+	font-size: 24px;
+	width: 790px;
+	margin-bottom: 90px;
+	margin-left: 80px;
+}
+
+.hero__button {
+	height: 78px;
+	width: 280px;
+	font-size: 23.4581px;
+	margin-left: 80px;
+	cursor: pointer;
+	font-weight: bold;
+	color: white;
+	background-color: #FF9900;
+	border: 0;
+	border-color: #FF9900;
+}
+
+.about-us__heading {
+	color: #333333;
+	margin-top: 100px;
+	font-size: 48px;
+	margin-bottom: 4px;
+	font-weight: normal;
+}
+
+.about-us__text {
+	font-weight: 400px;
+	width: 1235px;
+	line-height: 32px;
+	margin-bottom: 50px;
+}
+
+.about-us__elements {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us__img {
+	width: 868px;
+	height: 622px;
+	background-image: url('../img/Rectangle\ 2.jpg');
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.about-us__down {
+	display: flex;
+	justify-content: space-around;
+	height: 196px;
+	background: rgba(0, 0, 0, 0.5);
+	align-items: center;
+}
+
+.about-us__down-text {
+	color: white;
+	width: 454px;
+	line-height: 32px;
+}
+
+.about-us__button {
+	color: white;
+	border: 3px solid #FF9900;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 175px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.about-us__cards {
+	border: 1px solid #CACACA;
+	margin-bottom: 32px;
+	width: 870px;
+	height: 295px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.about-us__svgs {
+	width: 190px;
+	height: 165px;
+}
+
+.about-us__cards-title {
+	font-size: 24px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.about-us__cards-text {
+	width: 450px;
+	line-height: 32px;
+}
+
+.work__steps {
+	display: flex;
+	margin-top: 46px;
+	margin-bottom: 45px;
+}
+
+.work_step:not(:last-child) {
+	margin-right: 85px;
+}
+
+.work__title-text {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	margin-top: 0px;
+}
+
+.work__text {
+	width: 758px;
+	line-height: 32px;
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
+.work__button-more {
+	background-color: #FF9900;
+	font-weight: bold;
+	color: white;
+	border: 0px;
+	width: 175px;
+	height: 60px;
+	cursor: pointer;
+	margin-right: 32px;
+}
+
+.work__button-contract {
+	color: black;
+	border-color: black;
+	background-color: white;
+	width: 175px;
+	height: 60px;
+	cursor: pointer;
+	margin-bottom: 52px;
+}
+
+.work__buttons {
+	display: flex;
+}
+
+.work__img {
+	width: 870px;
+	height: 460px;
+}
+
+.work__main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.questions__title {
+	font-size: 48px;
+}
+
+
