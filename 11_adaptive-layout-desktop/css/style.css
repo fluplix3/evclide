@@ -48,6 +48,23 @@
 	font-style: normal;
 }
 
+@media (max-width:1024px) {
+  .header__nav {
+    display: none;
+  }
+
+  .footer__right {
+    display: none;
+  }
+
+  .header__container {
+    background-image: url(../img/Component\ 6.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+}
+
 * {
 	list-style: none;
 	font-family: 'Montserrat';
@@ -55,7 +72,7 @@
 }
 
 .container {
-  	width: 1770px;
+    max-width: 1770px;
   	margin: 0 auto;
 }
 
@@ -149,7 +166,7 @@
 	font-size: 24px;
   font-weight: bold;
   line-height: 29px;
-	width: 790px;
+	max-width: 790px;
 	margin-bottom: 91px;
 	margin-left: 81px;
 	margin-top: 23px;
@@ -191,7 +208,7 @@
 
 .about-us__text {
 	font-weight: 400px;
-	width: 1235px;
+	max-width: 1235px;
 	line-height: 32px;
 	margin-bottom: 49px;
 }
@@ -356,7 +373,7 @@
 }
 
 .work__text {
-	width: 758px;
+	max-width: 758px;
 	line-height: 32px;
 	margin-bottom: 49px;
 	margin-top: 0px;
@@ -672,11 +689,9 @@
 }
 
 .footer__right {
-  display: flex;
-  align-items: center;
+  margin-top: 139px;
   width: 363px;
   line-height: 32px;
-  margin-top: 4px;
   color: rgba(202, 202, 202, 1);
 
 }
