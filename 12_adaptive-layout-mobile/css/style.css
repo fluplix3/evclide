@@ -133,11 +133,54 @@
   border: 2px solid #ff9900;
 }
 
+.swiper-pagination-bullet  {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 10px;
+}
+
+.swiper-container {
+  max-width: 1770px;
+  height: 620px;
+  position: absolute;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  max-width: 1770px;
+  width: 100%;
+}
+
 .hero {
   height: 620px;
-	background-image: url('../img/low-angle-photo-of-balconies-2462015\ 1.jpg');
+}
+
+.hero__all-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero1, .hero2, .hero3 {
+  height: 620px;
   background-size: cover;
   background-position: center;
+}
+
+.hero1 {
+  background-image: url('../img/low-angle-photo-of-balconies-2462015\ 1.jpg');
+}
+
+.hero2 {
+  background-image: url('../img/brown-and-blue-glass-building-2093076\ 2.jpg');
+}
+
+.hero3 {
+  background-image: url('../img/apartment-apartment-building-architecture-building-323705\ 2.jpg');
 }
 
 .hero__main-text {
@@ -329,7 +372,8 @@
 	display: flex;
 	margin-top: 52px;
 	margin-bottom: 49px;
-  margin-left: 1px;
+  margin-left: 1;
+  padding-left: 0;
 }
 
 .work__step:nth-child(1) {
@@ -744,7 +788,7 @@
     display: none;
   }
 
-  .container, .header__container, .footer__container {
+  .container, .header__container, .footer__container, .swiper-container {
     width: 94.4%;
   }
 }
@@ -777,7 +821,7 @@
     display: none;
   }
 
-  .container, .header__container, .footer__container  {
+  .container, .header__container, .footer__container {
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -786,7 +830,11 @@
     width: 94.4%;
   }
 
-  .hero {
+  .swiper-container {
+    width: 90.11%;
+  }
+
+  .hero, .hero1, .hero2, .hero3, .swiper-container {
     height: 668px;
   }
 
@@ -807,6 +855,10 @@
     font-size: 60px;
     line-height: 73px;
     padding-top: 160px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 26px;
   }
 
   .about-us__elements {
@@ -940,7 +992,7 @@
     height: 69px;
   }
 
-  .hero {
+  .hero, .hero1, .hero2, .hero3, .swiper-container {
     max-height: 662px;
   }
 
@@ -952,6 +1004,10 @@
   .hero__main-text {
     font-size: 50px;
     line-height: 61px;
+  }
+
+  .swiper-container {
+    width: 87%;
   }
 
   .about-us__heading {
@@ -1037,7 +1093,7 @@
     margin-right: 15px;
   }
 
-  .hero {
+  .hero__all-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1057,6 +1113,10 @@
     margin-left: 22px;
     margin-right: 21px;
     text-align: center;
+  }
+
+  .swiper-container {
+    width: 95%;
   }
 
   .about-us__text {
@@ -1111,7 +1171,11 @@
     background-size: 94px 79px;
   }
 
-  .work__step:not(:last-child) {
+  .work__step:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .work__step-li:not(:last-child) {
     margin-right: 44px;
   }
 
@@ -1161,7 +1225,7 @@
     margin-bottom: 0px;
   }
 
-  .hero {
+  .hero, .hero1, .hero2, .hero3, .swiper-container {
     height: 308px;
   }
 
@@ -1182,6 +1246,19 @@
     width: 162px;
     height: 40px;
     font-size: 12px;
+  }
+
+  .swiper-container {
+    width: 90.3%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-bottom: -15px;
   }
 
   .about-us__heading, .work__title, .questions__title, .footer__form-title {

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Евклид - проектные системы</title>
@@ -38,6 +39,15 @@
     <!-- section-hero -->
 
     <section class="hero">
+      <div class="swiper-container">
+        <div class="swiper-wrapper swiper-no-swiping">
+          <div class="swiper-slide hero1"></div>
+          <div class="swiper-slide hero2"></div>
+          <div class="swiper-slide hero3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="hero__all-text">
         <h1 class="hero__main-text">Проектные решения любой сложности</h1>
         <p class="hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
           остаются уделом
@@ -45,7 +55,9 @@
         <form action="#">
           <button type="submit" class="hero__button">Заказать расчёт</button>
         </form>
+      </div>
     </section>
+
 
     <!-- section-about-us -->
 
@@ -97,12 +109,20 @@
 
     <section class="work">
       <h2 class="work__title">Как мы работаем</h2>
-      <div class="work__steps">
-        <a href="#" class="work__step">1 шаг</a>
-        <a href="#" class="work__step">2 шаг</a>
-        <a href="#" class="work__step">3 шаг</a>
-        <a href="#" class="work__step">4 шаг</a>
-      </div>
+      <ul class="work__steps">
+        <li class="work__step-li">
+          <a href="#" class="work__step">1 шаг</a>
+        </li>
+        <li class="work__step-li">
+          <a href="#" class="work__step">2 шаг</a>
+        </li>
+        <li class="work__step-li">
+          <a href="#" class="work__step">3 шаг</a>
+        </li>
+        <li class="work__step-li">
+          <a href="#" class="work__step">4 шаг</a>
+        </li>
+      </ul>
       <div class="work__main">
         <div>
           <p class="work__title-text">Проводим консультацию</p>
@@ -203,6 +223,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
