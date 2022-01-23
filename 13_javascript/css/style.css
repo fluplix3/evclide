@@ -387,6 +387,8 @@
 .work__step {
   font-size: 18px;
   color: black;
+  border: 0;
+  background-color: #fff;
 }
 
 .work__step:hover {
@@ -400,6 +402,18 @@
 
 .work__step:active {
   color:#E1670E
+}
+
+.work_one-tab {
+  color: tan;
+}
+
+.work__tabs-item {
+  display: none;
+}
+
+.work__tabs-item-active {
+  display: block;
 }
 
 .work__title-text {

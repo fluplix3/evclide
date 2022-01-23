@@ -12,11 +12,18 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-document.addEventListener('DomContentLoaded', function() {
-  document.querySelectorAll('work__step-li').forEach(function(tabsBtn) {
-    tabContent.classList.remove('tab-content-active')
-  })
-  document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
+document.querySelectorAll('.work__tabs-btn').forEach(function (tabsBtn) {
+  tabsBtn.addEventListener('click', function (e) {
+    const path = e.currentTarget.dataset.path;
+    document.querySelectorAll('.work__tabs-btn').forEach(function (btn) {
+      btn.classList.remove('work_one-tab')
+    });
+    e.currentTarget.classList.add('tabs-nav__btn--active');
+    document.querySelectorAll('.work__tabs-item').forEach(function (tabsBtn) {
+      tabsBtn.classList.remove('work__tabs-item-active')
+    });
+    document.querySelector(`[data-target="${path}"]`).classList.add('work__tabs-item-active');
+    });
+});
 
-})
 
