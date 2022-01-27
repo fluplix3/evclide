@@ -94,11 +94,12 @@
 }
 
 .header__item:not(:last-child) {
-  	margin-right: 85px;
+  	margin-right: 81.5px;
 }
 
 .header__link {
   	color: #333333;
+    border: 2px solid #fff;
 }
 
 .header__item:hover {
@@ -387,8 +388,9 @@
 .work__step {
   font-size: 18px;
   color: black;
-  border: 0;
+  border: 2px solid #fff;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .work__step:hover {
@@ -528,8 +530,27 @@
   margin-top: -1px;
 }
 
+.ui-icon {
+  width: 0;
+  height: 0;
+}
+
+.ui-state-default, .ui-widget-content {
+  background-color: #fff;
+  border-left: #fff;
+  border-right: #fff;
+  color: #333333;
+}
+
+.ui-accordion .ui-accordion-header {
+  padding-top: 15.4px;
+  padding-bottom: 15.4px;;
+}
+
 .questions__text {
-  max-width: 81%;
+  line-height: 32px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .question__text-slash {
@@ -581,6 +602,7 @@
   color: #CACACA;
   font-weight: 600;
   font-size: 18px;
+  border: 2px solid #222222;
 }
 
 .footer__nav-text:not(:last-child) {
@@ -602,9 +624,9 @@
 .footer__facebook {
   background-image: url(../img/social\ media.svg);
   background-repeat: no-repeat;
-  height: 60px;
-  width: 60px;
-  border: 0px;
+  height: 64px;
+  width: 64px;
+  border: 2px solid #222222;
   cursor: pointer;
   margin-right: 21px;
   background-color: #222222;
@@ -625,9 +647,9 @@
 .footer__vk {
   background-image: url(../img/vk.svg);
   background-repeat: no-repeat;
-  height: 60px;
-  width: 60px;
-  border: 0px;
+  height: 64px;
+  width: 64px;
+  border: 2px solid #222222;
   cursor: pointer;
   margin-right: 21px;
   background-color: #222222;
@@ -648,9 +670,9 @@
 .footer__instagram {
   background-image: url(../img/instagram\ \(1\).svg);
   background-repeat: no-repeat;
-  height: 60px;
-  width: 60px;
-  border: 0px;
+  height: 64px;
+  width: 64px;
+  border: 2px solid #222222;
   cursor: pointer;
   background-color: #222222;
 }
@@ -829,9 +851,10 @@
 
   .header__nav-list {
     padding: 0px;
+    flex-direction: column;
   }
 
-  .header__item, .footer__right {
+  .header__item {
     display: none;
   }
 
@@ -942,7 +965,7 @@
     margin-bottom: 34px;
   }
 
-  .questions__text {
+  .questions__title-text {
     font-size: 20px;
   }
 
@@ -1087,7 +1110,7 @@
     margin-bottom: 32px;
   }
 
-  .questions__text {
+  .questions__title-text {
     max-width: 86%;
   }
 
@@ -1404,7 +1427,7 @@
     margin-bottom: 17px;
   }
 
-  .questions__text {
+  .questions__title-text {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
