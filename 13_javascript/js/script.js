@@ -46,7 +46,7 @@ window.addEventListener('DomContentLoaded', function () {
     document.querySelector('#menu').classList.toggle('is-active')
   })
 
-  document.querySelectorAll('text').forEach(function(el) {
+  document.querySelectorAll('.text').forEach(function(el) {
     el.addEventListener('click', function(event) {
       event.target.classList.toggle('alert')
     })
