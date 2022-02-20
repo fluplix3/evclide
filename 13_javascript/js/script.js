@@ -34,14 +34,16 @@ document.querySelectorAll('.work__tabs-btn').forEach(function (tabsBtn) {
 
 $(function () {
   $("#accordion").accordion({
-    active: false,
-    collapsible: true
+    autoHeight: true,
+    scroll: false,
+    collapsible: true,
+    active: false
   });
 });
 
 // Burger
 
-window.addEventListener('DomContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#burger').addEventListener('click', function () {
     document.querySelector('#menu').classList.toggle('is-active')
   })
@@ -52,5 +54,23 @@ window.addEventListener('DomContentLoaded', function () {
     })
   })
 })
+
+document.querySelector("#burger").addEventListener("click", function() {
+  this.classList.toggle("active");
+})
+
+//search
+
+document.querySelector('.header__search').addEventListener('click', function() {
+  document.querySelector('.header__search-form').classList.toggle('search-active')
+})
+
+document.querySelector('.header__form-btn-close').addEventListener('click', function() {
+  document.querySelector('.header__search-form').classList.toggle('search-active')
+})
+
+
+
+
 
 

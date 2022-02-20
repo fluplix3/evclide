@@ -19,18 +19,29 @@
 
   <header class="header">
     <div class="header__container">
-      <button id="burger" class="header__burger is-active"></button>
+      <div id="burger" class="header__burger">
+        <span class="header__burger-line line"><img src="img/Rectangle 2 (1).svg" alt=""></span>
+        <span class="header__burger-line line"><img src="img/Rectangle 2 (1).svg" alt=""></span>
+        <span class="header__burger-line line"><img src="img/Rectangle 2 (1).svg" alt=""></span>
+      </div>
       <a class="header__link-img" href="#"><img class="header__img" src="img/Logo.svg" alt=""></a>
-      <nav class="header__nav">
-        <ul id="menu" class="header__nav-list">
-          <li class="header__item"><a class="header__link" href="#">О нас</a></li>
-          <li class="header__item"><a class="header__link" href="#">Проекты</a></li>
-          <li class="header__item"><a class="header__link" href="#">Этапы</a></li>
-          <li class="header__item"><a class="header__link" href="#">Отзывы</a></li>
-          <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
-          <button class="header__search"></button>
-        </ul>
-      </nav>
+      <div class="header__menu__search">
+        <nav>
+          <ul id="menu" class="header__nav-list">
+            <li class="header__item"><a class="header__link" href="#">О нас</a></li>
+            <li class="header__item"><a class="header__link" href="#">Проекты</a></li>
+            <li class="header__item"><a class="header__link" href="#">Этапы</a></li>
+            <li class="header__item"><a class="header__link" href="#">Отзывы</a></li>
+            <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="header__search"></button>
+        <form action="#" class="header__search-form">
+          <input class="header__form-input" type="search" placeholder="Что будем искать?">
+          <button class="header__form-btn-search"></button>
+          <button class="header__form-btn-close" type="button"></button>
+        </form>
+      </div>
     </div>
   </header>
 
@@ -190,7 +201,7 @@
       <p class="questions__title">Часто задаваемые вопросы</p>
       <div class="questions__list" id="accordion">
         <h3 class="questions__title-text questions__list-item">Из чего формируется конечная стоимость проекта?</h3>
-        <div>
+        <div class="questions__all-text">
           <span class="questions__text">Являясь всего лишь частью общей картины, непосредственные участники технического
             прогресса призывают нас
             к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный
@@ -198,30 +209,35 @@
             особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа
             политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений,
             что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь,
-            должны быть указаны как претенденты на роль ключевых факторов. Приятно, граждане, наблюдать, как некоторые
+            должны быть указаны как претенденты на роль ключевых факторов.</span>
+          <p class="questions__text">Приятно, граждане, наблюдать, как некоторые
             особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации
             набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры
             себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым
-            свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </span>
+            свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
         </div>
-        <h3 class="questions__title-text questions__list-item">У меня есть свой проект. Сможем ли мы его доработать <span
+        <h3 class="questions__title-text questions__list-item">У меня есть свой проект. Сможем ли мы его доработать
+          <span class="question__text-slash">/</span>
+          реализовать?
+        </h3>
+        <div>
+          <span></span>
+        </div>
+        <h3 class="questions__title-text questions__list-item">Я выбираю между разными компаниями. В чём ваше отличие?
+        </h3>
+        <div>
+          <span></span>
+        </div>
+        <h3 class="questions__title-text questions__list-item">Могу ли я делегировать вам работу <span
             class="question__text-slash">/</span>
-          реализовать?</h3>
-        <div>
-          <span></span>
-        </div>
-        <h3 class="questions__title-text questions__list-item">Я выбираю между разными компаниями. В чём ваше отличие?</h3>
-        <div>
-          <span></span>
-        </div>
-        <h3 class="questions__title-text questions__list-item">Могу ли я делегировать вам работу <span class="question__text-slash">/</span>
           согласование с подрядчиком
           <span class="question__text-slash">/</span> организацией?
         </h3>
         <div>
           <span></span>
         </div>
-        <h3 class="questions__title-text questions__list-item">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+        <h3 class="questions__title-text questions__list-item">Могу ли я вернуть деньги на каком-либо из этапов работ?
+        </h3>
         <div>
           <span></span>
         </div>
