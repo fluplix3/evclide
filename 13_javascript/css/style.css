@@ -493,6 +493,7 @@
 
 .work__text {
 	max-width: 758px;
+  min-height: 320px;
 	line-height: 32px;
 	margin-bottom: 49px;
 	margin-top: 0px;
@@ -583,34 +584,33 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #CACACA;
+  margin-top: -1px;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid transparent;
   display: flex;
-  align-items: center;
-  background-image: url(../img/+х.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
+  justify-content: space-between;
   cursor: pointer;
 }
 
+.questions__svg {
+  align-self: center;
+  transition: transform 0.4s ease-in-out;
+  fill: #ececec;
+}
+
 .ui-icon {
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 .ui-state-default, .ui-widget-content {
-  background-color: #fff;
-  border-left: #fff;
-  border-right: #fff;
   color: #333333;
 }
 
 .ui-accordion .ui-accordion-header {
-  padding-top: 36.8px;
-  padding-bottom: 36.8px;
-  font-size: 24px;
+  padding-top: 15.4px;
+  padding-bottom: 15.4px;
+  font-size: 20px;
   padding-left: 0;
-  margin-top: 0;
 }
 
 .ui-accordion .ui-accordion-content {
@@ -640,9 +640,18 @@
   color: #FF9900;
   border-top: 1px solid #ff9900;
   border-bottom: 1px solid #ff9900;
-  background-image: url(../img/+х\ \(1\).svg);
-  background-repeat: no-repeat;
-  background-position: right center;
+}
+
+.questions__list-item:hover .questions__svg {
+  fill: #FF9900;
+}
+
+.questions__list-item:hover .questions__svg-path {
+  fill: #fff;
+}
+
+.ui-state-active .questions__svg {
+  transform: rotate(45deg);
 }
 
 .footer {
@@ -1081,6 +1090,10 @@
     margin-top: 83px;
   }
 
+  .work__text {
+    min-height: 580px;
+  }
+
   .work__img {
     max-width: 437px;
     margin-top: 9px;
@@ -1134,6 +1147,10 @@
   .about-us__inside-card {
     margin-left: 170px;
     margin-right: 46px;
+  }
+
+  .work__text {
+    min-height: 680px;
   }
 
   .footer__nav {
@@ -1232,6 +1249,7 @@
 
   .work__text {
     margin-right: 0px;
+    min-height: 360px;
   }
 
   .questions__title {
@@ -1360,6 +1378,10 @@
 
   .work__step-li:not(:last-child) {
     margin-right: 44px;
+  }
+
+  .work__text {
+    min-height: 390px;
   }
 
   .work__button-more {
@@ -1614,6 +1636,11 @@
 
   .questions__list-item {
     background-size: 30px;
+  }
+
+  .questions__svg {
+    width: 30px;
+    height: 30px;
   }
 
   .ui-accordion .ui-accordion-header {
