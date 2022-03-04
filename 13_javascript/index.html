@@ -17,7 +17,7 @@
 
   <header class="header">
     <div class="header__container">
-      <div id="burger" class="header__burger">
+      <div id="burger" class="header__burger" aria-label="меню">
         <span class="header__burger-line line"><img src="img/Rectangle 2 (1).svg" alt=""></span>
         <span class="header__burger-line line"><img src="img/Rectangle 2 (1).svg" alt=""></span>
         <span class="header__burger-line line"><img src="img/Rectangle 2 (1).svg" alt=""></span>
@@ -26,18 +26,18 @@
       <div class="header__menu__search">
         <nav>
           <ul id="menu" class="header__nav-list">
-            <li class="header__item"><a class="header__link" href="#">О нас</a></li>
-            <li class="header__item"><a class="header__link" href="#">Проекты</a></li>
-            <li class="header__item"><a class="header__link" href="#">Этапы</a></li>
-            <li class="header__item"><a class="header__link" href="#">Отзывы</a></li>
-            <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+            <li class="header__item"><a aria-label="О нас" class="header__link" href="#">О нас</a></li>
+            <li class="header__item"><a aria-label="Проекты" class="header__link" href="#">Проекты</a></li>
+            <li class="header__item"><a aria-label="Этапы" class="header__link" href="#">Этапы</a></li>
+            <li class="header__item"><a aria-label="Отзывы" class="header__link" href="#">Отзывы</a></li>
+            <li class="header__item"><a aria-label="Контакты" class="header__link" href="#">Контакты</a></li>
           </ul>
         </nav>
-        <button class="header__search"></button>
+        <button class="header__search" aria-label="Поиск"></button>
         <form action="#" class="header__search-form">
           <input class="header__form-input" type="search" placeholder="Что будем искать?">
-          <button class="header__form-btn-search"></button>
-          <button class="header__form-btn-close" type="button"></button>
+          <button aria-label="найти" class="header__form-btn-search"></button>
+          <button aria-label="закрыть" class="header__form-btn-close" type="button"></button>
         </form>
       </div>
     </div>
@@ -122,16 +122,16 @@
       <h2 class="work__title">Как мы работаем</h2>
       <ul class="work__steps">
         <li class="work__step-li">
-          <button class="work__step work_one-tab work__tabs-btn" data-path="one">1 шаг</button>
+          <button aria-label="первый шаг" class="work__step work_one-tab work__tabs-btn" data-path="one">1 шаг</button>
         </li>
         <li class="work__step-li">
-          <button class="work__step work__tabs-btn" data-path="two">2 шаг</button>
+          <button aria-label="второй шаг" class="work__step work__tabs-btn" data-path="two">2 шаг</button>
         </li>
         <li class="work__step-li">
-          <button class="work__step work__tabs-btn" data-path="three">3 шаг</button>
+          <button aria-label="третий шаг" class="work__step work__tabs-btn" data-path="three">3 шаг</button>
         </li>
         <li class="work__step-li">
-          <button class="work__step work__tabs-btn" data-path="four">4 шаг</button>
+          <button aria-label="четвёртый шаг" class="work__step work__tabs-btn" data-path="four">4 шаг</button>
         </li>
       </ul>
       <div class="work__main">
@@ -200,10 +200,13 @@
       <div class="questions__list" id="accordion">
         <div class="questions__list-item">
           <h3 class="questions__title-text">Из чего формируется конечная стоимость проекта?</h3>
-          <svg class="questions__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="questions__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="25" cy="25" rx="25" ry="25" />
-            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-            </svg>
+            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+              fill="#666666" />
+          </svg>
         </div>
         <div class="questions__all-text">
           <span class="questions__text">Являясь всего лишь частью общей картины, непосредственные участники технического
@@ -225,10 +228,13 @@
             <span class="question__text-slash">/</span>
             реализовать?
           </h3>
-          <svg class="questions__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="questions__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="25" cy="25" rx="25" ry="25" />
-            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-            </svg>
+            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+              fill="#666666" />
+          </svg>
         </div>
         <div>
           <span></span>
@@ -236,10 +242,13 @@
         <div class="questions__list-item">
           <h3 class="questions__title-text">Я выбираю между разными компаниями. В чём ваше отличие?
           </h3>
-          <svg class="questions__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="questions__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="25" cy="25" rx="25" ry="25" />
-            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-            </svg>
+            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+              fill="#666666" />
+          </svg>
         </div>
         <div>
           <span></span>
@@ -250,10 +259,13 @@
             согласование с подрядчиком
             <span class="question__text-slash">/</span> организацией?
           </h3>
-          <svg class="questions__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="questions__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="25" cy="25" rx="25" ry="25" />
-            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-            </svg>
+            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+              fill="#666666" />
+          </svg>
         </div>
         <div>
           <span></span>
@@ -261,10 +273,13 @@
         <div class="questions__list-item">
           <h3 class="questions__title-text">Могу ли я вернуть деньги на каком-либо из этапов работ?
           </h3>
-          <svg class="questions__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="questions__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="25" cy="25" rx="25" ry="25" />
-            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-            </svg>
+            <path class="questions__svg-path" fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+              fill="#666666" />
+          </svg>
         </div>
         <div>
           <span></span>
@@ -280,30 +295,33 @@
       <div class="footer__left">
         <a href="#"><img class="footer__img" src="img/Logo (3).svg" alt=""></a>
         <nav class="footer__nav">
-          <a class="footer__nav-text" href="#">О нас</a>
-          <a class="footer__nav-text" href="#">Проекты</a>
-          <a class="footer__nav-text" href="#">Отзывы</a>
-          <a class="footer__nav-text" href="#">Договор оферты</a>
-          <a class="footer__nav-text" href="#">Договор подряда</a>
-          <a class="footer__nav-text" href="#">Конфиденциальность</a>
-          <a class="footer__nav-text" href="#">Партнёрское соглашение</a>
+          <a aria-label="О нас" class="footer__nav-text" href="#">О нас</a>
+          <a aria-label="Проекты" class="footer__nav-text" href="#">Проекты</a>
+          <a aria-label="Отзывы" class="footer__nav-text" href="#">Отзывы</a>
+          <a aria-label="Договор оферты" class="footer__nav-text" href="#">Договор оферты</a>
+          <a aria-label="Договор подряда" class="footer__nav-text" href="#">Договор подряда</a>
+          <a aria-label="Конфиденциальность" class="footer__nav-text" href="#">Конфиденциальность</a>
+          <a aria-label="Партнёрское соглашение" class="footer__nav-text" href="#">Партнёрское соглашение</a>
         </nav>
         <div>
-          <a href="#"><button class="footer__facebook"></button></a>
-          <a href="#"><button class="footer__vk"></button></a>
-          <a href="#"><button class="footer__instagram"></button></a>
+          <a href="#"><button class="footer__facebook" aria-label="facebook"></button></a>
+          <a href="#"><button class="footer__vk" aria-label="вконтакте"></button></a>
+          <a href="#"><button class="footer__instagram" aria-label="инстаграм"></button></a>
         </div>
       </div>
       <div class="footer__center">
         <p class="footer__form-title">Оставить заявку</p>
         <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="get">
-          <input autocomplete="name" class="footer__form-name-mail" type="text" placeholder="Фамилия, имя и отчество*">
-          <input autocomplete="email" class="footer__form-name-mail" type="email" placeholder="E-mail*">
-          <textarea class="footer__form-message" name="message" placeholder="Сообщение"></textarea>
+          <input aria-label="Фамилия, имя и отчество" autocomplete="name" class="footer__form-name-mail" type="text"
+            placeholder="Фамилия, имя и отчество*">
+          <input aria-label="E-mail" autocomplete="email" class="footer__form-name-mail" type="email"
+            placeholder="E-mail*">
+          <textarea aria-label="Сообщение" class="footer__form-message" name="message"
+            placeholder="Сообщение"></textarea>
           <div class="footer__form-down">
             <button class="footer__form-btn" type="submit">Отправить данные</button>
             <label class="footer__form-checkbox" for="check">
-              <input type="checkbox" required>
+              <input type="checkbox" aria-label="Согласен на обработку персональных данных" required>
               Согласен на обработку данных
               <span class="footer__checkbox"></span>
             </label>
