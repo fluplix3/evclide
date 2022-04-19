@@ -1,0 +1,24 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --skillbox-color: #3F2AFF;
+  --margin-right: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.header {
+  background-color: var(--skillbox-color);
+  height: 80px;
+  max-width: 1440px;
+  width: 100%;
+}
