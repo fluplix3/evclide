@@ -220,7 +220,7 @@ button {
 }
 
 .advantages {
-  margin-top: 48px;
+  margin-top: 82px;
 }
 
 .advantages__upper-text {
@@ -242,6 +242,7 @@ button {
 
 .advantages__paper-pctr {
   margin-right: var(--margin);
+  margin-top: 20px;
 }
 
 .advantages__icons-text {
@@ -283,6 +284,10 @@ button {
   margin-right: var(--margin);
 }
 
+.teachers__gutter-2 {
+  height: 383px;
+}
+
 .teachers__img {
   border-radius: 23px 23px 0 0;
 }
@@ -310,7 +315,7 @@ button {
 }
 
 .courses {
-  padding-top: 39px;
+  padding-top: 72px;
 }
 
 .courses__cards {
@@ -489,6 +494,10 @@ button {
     margin-right: 0;
   }
 
+  .teachers__gutter-2 {
+    height: auto;
+  }
+
   .teachers__main {
     flex-direction: column;
   }
@@ -507,18 +516,26 @@ button {
   }
 }
 
+@media (min-width:854px) {
+  .hero__illustration-768 {
+    display: none;
+  }
+}
+
 @media (max-width: 853px) {
   .hero__upper-text {
     font-size: 50px;
+    margin-top: -8px;
   }
 
   .hero__upper-text,
   .hero__items {
-    max-width: 385px;
+    max-width: 375px;
   }
 
   .hero__main-text {
     max-width: 345px;
+    margin-top: 20px;
   }
 
   .courses__main-text {
@@ -534,12 +551,63 @@ button {
     height: 187px;
   }
 
+  .advantages__icon-and-text  {
+    max-width: 210px;
+    width: 100%;
+  }
+
+  .advantages__icons-text {
+    min-height: 74px;
+  }
+
+  .teachers {
+    margin-top: 60px;
+  }
+
+  .teachers__three-four {
+    margin-bottom: 58px;
+  }
+
   .courses__img>p {
     margin-right: 10px;
   }
 
+  .courses__heading {
+    margin-bottom: 18px;
+  }
+
+  .courses__bold-text {
+    margin-top: 31px;
+  }
+
+  .courses__main-text {
+    margin-bottom: 22px;
+  }
+
+  .courses__btn {
+    width: 195px;
+    height: 60px;
+  }
+
   .hero__illustr-width {
-    width: 100%;
+    width: 0;
+    height: 0;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .hero__illustr-x, .hero__illustration-detail {
+    display: none;
+  }
+
+  .hero__illustration-768 {
+    display: block;
+    margin-bottom: 60px;
+    margin-right: 10px;
+  }
+
+  .hero__illustration {
+    margin-top: 0;
   }
 }
 
@@ -568,8 +636,16 @@ button {
     max-width: 150px;
   }
 
-  .hero__illustration {
+  .hero__illustration,  .hero__illustration-76 {
     display: none;
+  }
+
+  .hero__all {
+    height: 566px;
+  }
+
+  .hero__items {
+    margin-bottom: 49px;
   }
 
   .main__container {
@@ -586,8 +662,28 @@ button {
     width: 60%;
   }
 
+  .advantages__icons-text {
+    min-height: auto;
+  }
+
+  .advantages__icon-and-text {
+    max-width: 150px;
+  }
+
+  .advantages__paper-pctr {
+    margin-top: 0;
+  }
+
+  .teachers {
+    margin-top: var(--size);
+  }
+
   .teachers__description {
     max-width: 240px;
+  }
+
+  .courses__card {
+    margin-bottom: 25px;
   }
 
   .courses__bold-text {
@@ -625,8 +721,8 @@ button {
 
   .header__container,
   .main__container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .header__logo {
@@ -679,6 +775,10 @@ button {
     height: 353px;
   }
 
+  .hero__items {
+    margin-bottom: 0;
+  }
+
   .hero__upper-text {
     max-width: 226px;
     font-size: 30px;
@@ -687,8 +787,9 @@ button {
 
   .hero__main-text {
     font-size: 16px;
+    font-weight: normal;
     line-height: 130%;
-    margin-top: 15px;
+    margin-top: 9px;
     margin-bottom: var(--margin);
   }
 
@@ -696,6 +797,10 @@ button {
     width: 213px;
     height: 60px;
     font-size: 16px;
+  }
+
+  .advantages  {
+    margin-top: 50px;
   }
 
   .advantages__upper-text {
@@ -709,19 +814,28 @@ button {
   }
 
   .advantages__lower-text {
-    margin-top: 10px;
+    margin-top: 3px;
   }
 
   .advantages__icons {
     flex-direction: column;
   }
 
+  .advantages__upper-text {
+    max-width: 240px;
+  }
+
   .advantages__icons-text {
-    max-width: 200px;
+    max-width: 180px;
+  }
+
+  .advantages__icon-and-text {
+    flex-direction: row;
+    max-width: 290px;
   }
 
   .advantages__icon-and-text:not(:first-child) {
-    margin-top: var(--margin);
+    margin-top: -2px;
   }
 
   .teachers__main {
@@ -729,17 +843,25 @@ button {
   }
 
   .teachers {
-    margin-top: 50px;
+    margin-top: 37px;
+  }
+
+  .teachers__main {
+    margin-top: 25px;
   }
 
   .teachers__h2-text {
     font-size: 20px;
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
   .teachers__gutter,
   .teachers__gutter-2 {
     flex-direction: column;
+  }
+
+  .teachers__gutter-2 {
+    padding-bottom: 14px;
   }
 
   .teachers__description {
@@ -754,8 +876,21 @@ button {
     margin-right: 0;
   }
 
+  .courses {
+    padding-top: 45px;
+  }
+
   .courses__heading {
     font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .courses__main-text {
+    margin-bottom: 16px;
+  }
+
+  .courses__btn {
+    width: 195px;
   }
 
   .courses__card-first,
