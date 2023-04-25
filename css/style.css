@@ -111,10 +111,6 @@
   	border-bottom: 2px solid #FF9900;
 }
 
-.header__link:focus {
-  border: 2px solid #FF9900;
-}
-
 .header__link:active {
   color: #E1670E;
 }
@@ -160,6 +156,10 @@
   width: 100%;
   height: 30px;
   align-self: center;
+}
+
+.header__form-input:focus-visible {
+  outline: none;
 }
 
 .header__search:hover {
